@@ -39,7 +39,7 @@ export default function Home() {
             </Col>
             <Col lg="2">
               <div className="hero_img-box">
-                <video src={heroVideo} alt="" controls="" />
+                <video src={heroVideo} alt="" controls />
               </div>
             </Col>
             <Col lg="2">
