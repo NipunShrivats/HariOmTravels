@@ -2,7 +2,8 @@ import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 
 import Home from "../Pages/Home/Home";
-import Tours from "../Pages/Home/Home";
+import About from "../Pages/About/About";
+import Tours from "../Pages/Tours/Tours";
 import TourDetails from "../Pages/TourDetails/TourDetails";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
@@ -13,12 +14,13 @@ export default function Routers() {
     <>
       <Routes>
         <Route path="/" element={<Navigate to="/Home" />}></Route>
-        <Route path="/Home" element={<Home />}></Route>
-        <Route path="/Tours" element={<Tours />}></Route>
-        <Route path="/Tours/:id" element={<TourDetails />}></Route>
-        <Route path="/Login" element={<Login />}></Route>
-        <Route path="/Register" element={<Register />}></Route>
-        <Route path="/Tours/search" element={<SearchResultList />}></Route>
+        <Route path="/home" element={<Home />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/tours" element={<Tours />}></Route>
+        <Route path="/tours/:id" element={<TourDetails />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/register" element={<Register />}></Route>
+        <Route path="/tours/search" element={<SearchResultList />}></Route>
       </Routes>
     </>
   );
