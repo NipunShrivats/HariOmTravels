@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import { Container, Row, Col } from "reactstrap";
 import heroImg01 from "../../assets/images/hero-img01.jpg";
-import heroImg02 from "../../assets/images/hero-img01.jpg";
+import heroImg02 from "../../assets/images/hero-img02.jpg";
 import heroVideo from "../../assets/images/hero-video.mp4";
 import Subtitle from "../../Shared/Subtitle";
 import worldImg from "../../assets/images/world.png";
@@ -33,7 +33,19 @@ export default function Home() {
               </div>
             </Col>
             <Col lg="2">
-              <div className="hero_img-box"></div>
+              <div className="hero_img-box">
+                <img src={heroImg01} alt="" />
+              </div>
+            </Col>
+            <Col lg="2">
+              <div className="hero_img-box">
+                <video src={heroVideo} alt="" controls="" />
+              </div>
+            </Col>
+            <Col lg="2">
+              <div className="hero_img-box">
+                <img src={heroImg02} alt="" />
+              </div>
             </Col>
           </Row>
         </Container>
