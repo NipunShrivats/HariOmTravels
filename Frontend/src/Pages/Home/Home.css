@@ -33,3 +33,9 @@
     border: 1px solid var(--secondary-color);
     object-fit: cover;
 }
+
+.hero_content {
+    padding-top: 3.5rem;
+}
+
+.hero_img-box {}

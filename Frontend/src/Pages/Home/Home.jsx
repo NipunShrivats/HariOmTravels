@@ -38,12 +38,12 @@ export default function Home() {
               </div>
             </Col>
             <Col lg="2">
-              <div className="hero_img-box">
+              <div className="hero_img-box mt-4">
                 <video src={heroVideo} alt="" controls />
               </div>
             </Col>
             <Col lg="2">
-              <div className="hero_img-box">
+              <div className="hero_img-box mt-5">
                 <img src={heroImg02} alt="" />
               </div>
             </Col>
