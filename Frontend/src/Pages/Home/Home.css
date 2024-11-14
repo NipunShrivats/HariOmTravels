@@ -38,4 +38,19 @@
     padding-top: 3.5rem;
 }
 
-.hero_img-box {}
+.hero_img-box {
+    /* border: 2px solid red; */
+}
+
+.services_subtitle {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #ee6e6e;
+    font-family: var(--subtitle-font-name);
+}
+
+.services_title {
+    font-size: 2.5rem;
+    font-weight: 500;
+
+}
