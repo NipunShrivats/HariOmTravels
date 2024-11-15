@@ -7,6 +7,7 @@ import heroVideo from "../../assets/images/hero-video.mp4";
 import Subtitle from "../../Shared/Subtitle";
 import worldImg from "../../assets/images/world.png";
 import SearchBar from "../../Shared/SearchBar";
+import ServiceList from "../../Services/ServiceList";
 
 export default function Home() {
   return (
@@ -61,6 +62,7 @@ export default function Home() {
               <h5 className="services_subtitle">What we serve</h5>
               <h2 className="services_title">We offer our best services</h2>
             </Col>
+            <ServiceList />
           </Row>
         </Container>
       </section>

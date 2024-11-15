@@ -1,6 +1,6 @@
 import React from "react";
 import ServiceCard from "./ServiceCard";
-import { col } from "reactstrap";
+import { Col } from "reactstrap";
 
 import weatherImg from "../assets/images/weather.png";
 import guideImg from "../assets/images/guide.png";
@@ -28,7 +28,9 @@ export default function ServiceList() {
   return (
     <>
       {serviceData.map((item, index) => (
-        <col lg="3" key={index}></col>
+        <Col lg="3" key={index}>
+          <ServiceCard item={item} />
+        </Col>
       ))}
     </>
   );
