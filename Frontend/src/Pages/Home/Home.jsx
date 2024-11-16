@@ -1,10 +1,14 @@
 import React from "react";
 import "./Home.css";
 import { Container, Row, Col } from "reactstrap";
+
 import heroImg01 from "../../assets/images/hero-img01.jpg";
 import heroImg02 from "../../assets/images/hero-img02.jpg";
 import heroVideo from "../../assets/images/hero-video.mp4";
+import experinceImg from "../../assets/images/experience.png";
+
 import Subtitle from "../../Shared/Subtitle";
+
 import worldImg from "../../assets/images/world.png";
 import SearchBar from "../../Shared/SearchBar";
 import ServiceList from "../../Services/ServiceList";
@@ -54,7 +58,7 @@ export default function Home() {
           </Row>
         </Container>
       </section>
-      {/* --------------------------------------------- */}
+      {/* -------- What we serve section start -------- */}
       <section>
         <Container className="">
           <Row>
@@ -66,6 +70,7 @@ export default function Home() {
           </Row>
         </Container>
       </section>
+      {/* -------- What we serve section end -------- */}
       {/* -------- featured tour section start -------- */}
       <section>
         <Container>
@@ -78,7 +83,51 @@ export default function Home() {
           </Row>
         </Container>
       </section>
-      {/* -------- featured tour section start -------- */}
+      {/* -------- featured tour section end -------- */}
+      {/* -------- experiernce section start -------- */}
+      <section>
+        <Container>
+          <Row>
+            <Col lg="6">
+              <div className="experience_content">
+                <Subtitle subtitle="Experience"></Subtitle>
+                <h2>
+                  With our all experience <br />
+                  we will serve you
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem
+                  <br />
+                  ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+
+              <div className="counter_wrapper d-flex align-items-center gap-5">
+                <div className="counter_box">
+                  <span>12k+</span>
+                  <h6>Successful trips</h6>
+                </div>
+                <div className="counter_box">
+                  <span>2k+</span>
+                  <h6>Regular clients</h6>
+                </div>
+                <div className="counter_box">
+                  <span>15+</span>
+                  <h6>Years experience</h6>
+                </div>
+              </div>
+            </Col>
+            <Col lg="6">
+              <div className="experience_img">
+                <img src={experinceImg} alt="" />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      {/* -------- experiernce section end -------- */}
+      {/* -------- gallery section start -------- */}
+      {/* -------- gallery section end -------- */}
     </>
   );
 }
