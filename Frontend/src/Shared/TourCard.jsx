@@ -2,6 +2,7 @@ import React from "react";
 import "./TourCard.css";
 import { Card, CardBody } from "reactstrap";
 import { Link } from "react-router-dom";
+import "./tour-card.css";
 
 export default function TourCard({ tour }) {
   const { id, title, city, photo, price, featured, avgRating, reviews } = tour;
