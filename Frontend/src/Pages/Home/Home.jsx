@@ -8,12 +8,13 @@ import Subtitle from "../../Shared/Subtitle";
 import worldImg from "../../assets/images/world.png";
 import SearchBar from "../../Shared/SearchBar";
 import ServiceList from "../../Services/ServiceList";
+import FeaturedToursList from "../../Featured-Tours/FeaturedToursList";
 
 export default function Home() {
   return (
     <>
       <section>
-        <Container>
+        <Container className="">
           <Row>
             <Col lg="6">
               <div className="hero_content">
@@ -53,10 +54,9 @@ export default function Home() {
           </Row>
         </Container>
       </section>
-
       {/* --------------------------------------------- */}
       <section>
-        <Container>
+        <Container className="">
           <Row>
             <Col lg="3">
               <h5 className="services_subtitle">What we serve</h5>
@@ -66,6 +66,19 @@ export default function Home() {
           </Row>
         </Container>
       </section>
+      {/* -------- featured tour section start -------- */}
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12" className="mb-5">
+              <Subtitle subtitle={"Explore"} />
+              <h2 className="featured_tour-title">Our Featured Tours</h2>
+            </Col>
+            <FeaturedToursList />
+          </Row>
+        </Container>
+      </section>
+      {/* -------- featured tour section start -------- */}
     </>
   );
 }
