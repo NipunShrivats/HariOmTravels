@@ -8,7 +8,7 @@ import Subtitle from "../../Shared/Subtitle";
 import worldImg from "../../assets/images/world.png";
 import SearchBar from "../../Shared/SearchBar";
 import ServiceList from "../../Services/ServiceList";
-import FeaturedToursList from "../../Featured-Tours/FeaturedToursList";
+import FeaturedTourList from "../../Featured-Tours/FeaturedTourList";
 
 export default function Home() {
   return (
@@ -74,7 +74,7 @@ export default function Home() {
               <Subtitle subtitle={"Explore"} />
               <h2 className="featured_tour-title">Our Featured Tours</h2>
             </Col>
-            <FeaturedToursList />
+            <FeaturedTourList />
           </Row>
         </Container>
       </section>
