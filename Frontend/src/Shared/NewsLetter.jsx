@@ -7,7 +7,7 @@ import "./NewsLetter.css";
 export default function NewsLetter() {
   return (
     <>
-      <section>
+      <section className="newsletter">
         <Container>
           <Row>
             <Col lg="6">
@@ -18,12 +18,7 @@ export default function NewsLetter() {
                 <input type="email" placeholder="Enter your email" />
                 <button className="btn newsletter_btn">Subscribe</button>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                numquam iure tempore facere facilis amet esse repudiandae illo
-                voluptatum ipsa consequuntur explicabo consequatur adipisci
-                laborum, itaque assumenda at doloribus veritatis?
-              </p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </Col>
             <Col lg="6">
               <div className="newsletter_img">
