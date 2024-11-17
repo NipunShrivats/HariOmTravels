@@ -34,6 +34,7 @@ const quick_links2 = [
 ];
 
 export default function Footer() {
+  const CurrentYear = new Date().getFullYear();
   return (
     <>
       <footer className="footer">
@@ -49,27 +50,27 @@ export default function Footer() {
                 <div className="social_links d-flex align-items-center gap-4">
                   <span>
                     <Link to="">
-                      <i class="ri-youtube-line"></i>
+                      <i className="ri-youtube-line"></i>
                     </Link>
                   </span>
                   <span>
                     <Link to="">
-                      <i class="ri-facebook-box-line"></i>
+                      <i className="ri-facebook-box-line"></i>
                     </Link>
                   </span>
                   <span>
                     <Link to="">
-                      <i class="ri-instagram-line"></i>
+                      <i className="ri-instagram-line"></i>
                     </Link>
                   </span>
                   <span>
                     <Link to="">
-                      <i class="ri-twitter-line"></i>
+                      <i className="ri-twitter-line"></i>
                     </Link>
                   </span>
                   <span>
                     <Link to="">
-                      <i class="ri-github-fill"></i>
+                      <i className="ri-github-fill"></i>
                     </Link>
                   </span>
                 </div>
@@ -79,14 +80,71 @@ export default function Footer() {
               <h5 className="footer_link-title">Discover</h5>
               <ListGroup className="footer_quick-links">
                 {quick_links1.map((item, index) => (
-                  <ListGroupItem key={index} className="ps-5 border-0">
+                  <ListGroupItem key={index} className="ps-0 border-0">
                     <Link to={item.path}>{item.display}</Link>
                   </ListGroupItem>
                 ))}
               </ListGroup>
             </Col>
-            <Col lh="3"></Col>
-            <Col lh="3"></Col>
+            <Col lg="3">
+              <h5 className="footer_link-title">Quick Links</h5>
+              <ListGroup className="footer_quick-links">
+                {quick_links2.map((item, index) => (
+                  <ListGroupItem key={index} className="ps-0 border-0">
+                    <Link to={item.path}>{item.display}</Link>
+                  </ListGroupItem>
+                ))}
+              </ListGroup>
+            </Col>
+            <Col lg="3">
+              <h5 className="footer_link-title">Contact</h5>
+              <ListGroup className="footer_quick-links">
+                <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
+                  <h6 className="mb-0 d-flex align-items-center gap-2">
+                    <span>
+                      <i className="ri-map-pin-line"></i>
+                    </span>
+                    Address:
+                  </h6>
+                  <p className="mb-0">New Delhi, India</p>
+                </ListGroupItem>
+                <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
+                  <h6 className="mb-0 d-flex align-items-center gap-2">
+                    <span>
+                      <i class="ri-phone-line"></i>
+                    </span>
+                    Phone:
+                  </h6>
+                  <p className="mb-0">+91-9876543219</p>
+                </ListGroupItem>
+                <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
+                  <h6 className="mb-0 d-flex align-items-center gap-2">
+                    <span>
+                      <i class="ri-mail-send-line"></i>
+                    </span>
+                    Email:
+                  </h6>
+                  <p className="mb-0">123@gmail.com</p>
+                </ListGroupItem>
+              </ListGroup>
+            </Col>
+            <Col lg="12" className="copyright-bar">
+              <p className="copyright">
+                Copyright © {CurrentYear}, HariOm Travels Pvt. Ltd. | All rights
+                reserved{" "}
+              </p>
+              <p className="devdata">
+                Made with ❤️ by
+                <Link
+                  to={"https://github.com/NipunShrivats?tab=repositories"}
+                  target="_blank"
+                >
+                  <span className="developer">
+                    <i className="ri-github-fill"></i>
+                  </span>
+                </Link>
+              </p>
+            </Col>
           </Row>
         </Container>
       </footer>

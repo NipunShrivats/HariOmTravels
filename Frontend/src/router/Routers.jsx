@@ -8,7 +8,6 @@ import TourDetails from "../Pages/TourDetails/TourDetails";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import SearchResultList from "../Pages/SearchResultList/SearchResultList";
-import Gif from "../Components/Gif";
 
 export default function Routers() {
   return (
@@ -16,7 +15,6 @@ export default function Routers() {
       <Routes>
         <Route path="/" element={<Navigate to="/Home" />}></Route>
         <Route path="/home" element={<Home />}></Route>
-        <Route path="/gif" element={<Gif />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/tours" element={<Tours />}></Route>
         <Route path="/tours/:id" element={<TourDetails />}></Route>

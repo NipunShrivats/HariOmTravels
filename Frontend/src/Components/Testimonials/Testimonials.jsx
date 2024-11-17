@@ -10,16 +10,14 @@ function TestimonialCard(props) {
   const { data, img, name } = props;
   return (
     <div className="testimonial py-4 px-3">
-      <p>
-        {data}
-        <div className="d-flex align-items-denter gap-4 mt-3">
-          <img src={img} className="w-25 h-25 rounded-2" alt="" />
-          <div>
-            <h5 className="mb-0 mt-3">{name}</h5>
-            <p>Customer</p>
-          </div>
+      <p>{data}</p>
+      <div className="d-flex align-items-denter gap-4 mt-3">
+        <img src={img} className="w-25 h-25 rounded-2" alt="" />
+        <div>
+          <h5 className="mb-0 mt-3">{name}</h5>
+          <p>Customer</p>
         </div>
-      </p>
+      </div>
     </div>
   );
 }

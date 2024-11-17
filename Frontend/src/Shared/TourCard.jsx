@@ -18,11 +18,11 @@ export default function TourCard({ tour }) {
           <CardBody>
             <div className="card_top d-flex align-items-center justify-content-between">
               <span className="tour_location d-flex align-items-center gap-1">
-                <i class="ri-map-pin-line"></i>
+                <i className="ri-map-pin-line"></i>
                 {city}
               </span>
               <span className="tour_location d-flex align-items-center gap-1">
-                <i class="ri-star-fill"></i>
+                <i className="ri-star-fill"></i>
                 {avgRating} <span>({reviews.length})</span>
               </span>
             </div>
