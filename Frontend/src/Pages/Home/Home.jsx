@@ -30,8 +30,8 @@ export default function Home() {
                   <img src={worldImg} alt="" />
                 </div>
                 <h1>
-                  Traveling opens the door to creating{""}
-                  <span className="highlight"> memories</span>
+                  Traveling opens the doors for creating <br />
+                  <span className="highlight">Memories</span>
                 </h1>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -57,8 +57,8 @@ export default function Home() {
                 <img src={heroImg02} alt="" />
               </div>
             </Col>
-            <SearchBar />
           </Row>
+          <SearchBar />
         </Container>
       </section>
       {/* -------- What we serve section start -------- */}
@@ -66,7 +66,7 @@ export default function Home() {
         <Container className="">
           <Row>
             <Col lg="3">
-              <h5 className="services_subtitle">What we serve</h5>
+              <Subtitle subtitle="What we serve" />
               <h2 className="services_title">We offer our best services</h2>
             </Col>
             <ServiceList />

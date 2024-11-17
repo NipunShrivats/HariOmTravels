@@ -111,7 +111,7 @@ export default function Footer() {
                 <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
                   <h6 className="mb-0 d-flex align-items-center gap-2">
                     <span>
-                      <i class="ri-phone-line"></i>
+                      <i className="ri-phone-line"></i>
                     </span>
                     Phone:
                   </h6>
@@ -120,7 +120,7 @@ export default function Footer() {
                 <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
                   <h6 className="mb-0 d-flex align-items-center gap-2">
                     <span>
-                      <i class="ri-mail-send-line"></i>
+                      <i className="ri-mail-send-line"></i>
                     </span>
                     Email:
                   </h6>
@@ -128,25 +128,25 @@ export default function Footer() {
                 </ListGroupItem>
               </ListGroup>
             </Col>
-            <Col lg="12" className="copyright-bar">
-              <p className="copyright">
-                Copyright © {CurrentYear}, HariOm Travels Pvt. Ltd. | All rights
-                reserved{" "}
-              </p>
-              <p className="devdata">
-                Made with ❤️ by
-                <Link
-                  to={"https://github.com/NipunShrivats?tab=repositories"}
-                  target="_blank"
-                >
-                  <span className="developer">
-                    <i className="ri-github-fill"></i>
-                  </span>
-                </Link>
-              </p>
-            </Col>
           </Row>
         </Container>
+        <Col lg="12" className="copyright-bar">
+          <p className="copyright">
+            Copyright © {CurrentYear} | HariOm Travels Pvt. Ltd. | All rights
+            reserved{" "}
+          </p>
+          <p className="devdata">
+            Made with ❤️ by
+            <Link
+              to={"https://github.com/NipunShrivats?tab=repositories"}
+              target="_blank"
+            >
+              <span className="developer">
+                <i className="ri-github-fill"></i>
+              </span>
+            </Link>
+          </p>
+        </Col>
       </footer>
     </>
   );

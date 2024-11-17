@@ -19,10 +19,10 @@ export default function SearchBar() {
 
   return (
     <>
-      <Col lg="12">
+      <Col lg="12" className="search-box">
         <div className="search_bar">
-          <Form className="d-flex align-items-center gap-4">
-            <FormGroup className="d-flex gap-3 form_group form_group_fast">
+          <Form className="form-box">
+            <FormGroup className="d-flex gap-3 form_group form_group_fast ">
               <span>
                 <i className="ri-map-pin-line"></i>
               </span>
@@ -35,7 +35,7 @@ export default function SearchBar() {
                 />
               </div>
             </FormGroup>
-            <FormGroup className="d-flex gap-3 form_group form_group_fast">
+            <FormGroup className="d-flex gap-3 form_group form_group_fast ">
               <span>
                 <i className="ri-map-pin-time-line"></i>
               </span>
@@ -48,7 +48,7 @@ export default function SearchBar() {
                 />
               </div>
             </FormGroup>
-            <FormGroup className="d-flex gap-3 form_group form_group_fast">
+            <FormGroup className="d-flex gap-3 form_group form_group_fast ">
               <span>
                 <i className="ri-group-line"></i>
               </span>
