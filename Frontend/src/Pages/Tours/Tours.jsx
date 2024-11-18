@@ -10,7 +10,12 @@ import NewsLetter from "../../Shared/NewsLetter";
 
 export default function Tours() {
   const [pageCount, SetPageCount] = useState(0);
+  const [page, setPage] = useState(0);
 
+  useEffect(() => {
+    const pages = Math.ceil(5 / 4);
+    SetPageCount(pages);
+  }, [page]);
   return (
     <>
       <CommanSection title={"All Tours"} />
@@ -23,16 +28,29 @@ export default function Tours() {
       </section>
       <section className="py-0">
         <Container>
-          <Row>
+          <Row className="">
             {tourData?.map((tour) => (
               <Col lg="3" className="mb-4" key={tour.id}>
                 <TourCard tour={tour} />
               </Col>
             ))}
-            <Col lg="12"></Col>
+            <Col lg="12" className="mt-4 mb-2">
+              <div className="pagination d-flex align-items-center justify-content-center mt-4 gap-3">
+                {[...Array(pageCount).keys()].map((number) => (
+                  <span
+                    key={number}
+                    onClick={() => setPage(number)}
+                    className={page === number ? "active_page" : ""}
+                  >
+                    {number + 1}
+                  </span>
+                ))}
+              </div>
+            </Col>
           </Row>
         </Container>
       </section>
+      <NewsLetter />
     </>
   );
 }
