@@ -5,8 +5,8 @@
 }
 
 .search_bar {
-    /* border: 2px solid red; */
-    padding: 0.5em 2rem;
+    border: 2px solid var(--primary-color);
+    padding: 0rem 2rem;
     border-radius: 50px;
     box-shadow: rgba(17, 12, 46, 0.15) 20px 20px 100px 20px;
     width: max-content;
@@ -52,7 +52,7 @@
 
 .search_icon i {
     font-size: 1.6rem;
-    padding: .8rem;
+    padding: .6rem;
     background: var(--secondary-color);
     color: #fff;
     border-radius: 50px;
