@@ -1,5 +1,5 @@
 import React from "react";
-import "./commanSection.css";
+import "./CommanSection.css";
 import { Container, Row, Col } from "reactstrap";
 
 export default function CommanSection({ title }) {
