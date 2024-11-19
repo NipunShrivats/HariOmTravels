@@ -5,7 +5,7 @@
 }
 
 .search_bar {
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--secondary-color);
     padding: 0rem 2rem;
     border-radius: 50px;
     box-shadow: rgba(17, 12, 46, 0.15) 20px 20px 100px 20px;

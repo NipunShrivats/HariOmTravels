@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 
 import heroImg01 from "../../assets/images/hero-img01.jpg";
