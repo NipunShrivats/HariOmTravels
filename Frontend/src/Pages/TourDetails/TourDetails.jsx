@@ -4,6 +4,7 @@ import { Container, Row, Col, Form, ListGroup } from "reactstrap";
 import { useParams } from "react-router-dom";
 import tourData from "../../assets/data/tours";
 import avatar from "../../assets/images/avatar.jpg";
+import Booking from "../../Components/Booking/Booking";
 
 export default function TourDetails() {
   const { id } = useParams("");
@@ -20,10 +21,10 @@ export default function TourDetails() {
   };
 
   // submit request
-  const sumbithandler = (e) => {
+  const sumbitHandler = (e) => {
     e.preventDefault();
     const reviewText = reviewMsgRef.current.value;
-    alert(`${reviewText}, ${tourRating}`);
+    // alert(`${reviewText}, ${tourRating}`);
   };
 
   const {
@@ -87,7 +88,7 @@ export default function TourDetails() {
                 {/* ------------------ tour review section start ------------------*/}
                 <div className="tour_reviews mt-4">
                   <h4>Reviews({reviews?.length}reviews)</h4>
-                  <Form onSubmit={sumbithandler}>
+                  <Form onSubmit={sumbitHandler}>
                     <div className="d-flex align-items-center gap-3 mb-4 rating_group">
                       <span onClick={() => setTourRating(1)}>
                         1 <i class="ri-star-fill"></i>
@@ -147,6 +148,9 @@ export default function TourDetails() {
                 </div>
                 {/* ------------------ tour review section end ------------------*/}
               </div>
+            </Col>
+            <Col lg="4">
+              <Booking tour={tour} avgRating={avgRating} />
             </Col>
           </Row>
         </Container>
