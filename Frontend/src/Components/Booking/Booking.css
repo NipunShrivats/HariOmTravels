@@ -1,7 +1,7 @@
 .booking {
     padding: 2rem;
     border-radius: 0.5rem;
-    border: 1px solid rgb(229, 231, 235);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 80px;
 }
@@ -56,4 +56,37 @@
 
 .booking_form input:focus {
     border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/* .booking_info-form {
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+} */
+
+.booking_bottom li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.booking_bottom li h5,
+.booking_bottom li span {
+    font-size: 1rem;
+    color: var(--text--color);
+    font-weight: 500;
+}
+
+.booking_bottom {
+    margin-top: 1rem;
+}
+
+.total h5,
+.total span {
+    color: var(--heading-color) !important;
+    font-weight: 700 !important;
+    font-size: 1.1rem !important;
+}
+
+.booking-btn {
+    border: 2px solid red !important;
 }

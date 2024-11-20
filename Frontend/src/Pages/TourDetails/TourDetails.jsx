@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import tourData from "../../assets/data/tours";
 import avatar from "../../assets/images/avatar.jpg";
 import Booking from "../../Components/Booking/Booking";
+import Newsletter from "../../Shared/NewsLetter";
 
 export default function TourDetails() {
   const { id } = useParams("");
@@ -43,7 +44,7 @@ export default function TourDetails() {
     <>
       <section>
         <Container>
-          <Row>
+          <Row className="">
             <Col lg="8">
               <div className="tour_content">
                 <img src={photo} alt="" />
@@ -60,25 +61,25 @@ export default function TourDetails() {
                     </span>
 
                     <span>
-                      <i class="ri-map-pin-fill"></i>
+                      <i className="ri-map-pin-fill"></i>
                       {address}
                     </span>
                   </div>
                   <div className="tour_extra-details">
                     <span>
-                      <i class="ri-map-pin-2-line"></i>
+                      <i className="ri-map-pin-2-line"></i>
                       {city}
                     </span>
                     <span>
-                      <i class="ri-money-dollar-circle-line"></i>${price}/- per
-                      person
+                      <i className="ri-money-dollar-circle-line"></i>${price}/-
+                      per person
                     </span>
                     <span>
-                      <i class="ri-pin-distance-line"></i>
+                      <i className="ri-pin-distance-line"></i>
                       {distance} Km
                     </span>
                     <span>
-                      <i class="ri-group-line"></i>
+                      <i className="ri-group-line"></i>
                       {maxGroupSize} people
                     </span>
                   </div>
@@ -91,19 +92,19 @@ export default function TourDetails() {
                   <Form onSubmit={sumbitHandler}>
                     <div className="d-flex align-items-center gap-3 mb-4 rating_group">
                       <span onClick={() => setTourRating(1)}>
-                        1 <i class="ri-star-fill"></i>
+                        1 <i className="ri-star-fill"></i>
                       </span>
                       <span onClick={() => setTourRating(2)}>
-                        2 <i class="ri-star-fill"></i>
+                        2 <i className="ri-star-fill"></i>
                       </span>
                       <span onClick={() => setTourRating(3)}>
-                        3 <i class="ri-star-fill"></i>
+                        3 <i className="ri-star-fill"></i>
                       </span>
                       <span onClick={() => setTourRating(4)}>
-                        4 <i class="ri-star-fill"></i>
+                        4 <i className="ri-star-fill"></i>
                       </span>
                       <span onClick={() => setTourRating(5)}>
-                        5 <i class="ri-star-fill"></i>
+                        5 <i className="ri-star-fill"></i>
                       </span>
                     </div>
 
@@ -121,8 +122,8 @@ export default function TourDetails() {
                   </Form>
 
                   <ListGroup className="user_reviews">
-                    {reviews?.map((review) => (
-                      <div className="review_item">
+                    {reviews?.map((review, index) => (
+                      <div className="review_item" key={index}>
                         <img src={avatar} alt="" />
                         <div className="w-100">
                           <div className="d-flex align-items-center justify-content-between">
@@ -136,7 +137,7 @@ export default function TourDetails() {
                               </p>
                             </div>
                             <span className="d-flex align-items-center">
-                              <i class="ri-star-fill"></i>
+                              <i className="ri-star-fill"></i>
                               {review.rating}
                             </span>
                           </div>
@@ -155,6 +156,7 @@ export default function TourDetails() {
           </Row>
         </Container>
       </section>
+      <Newsletter />
     </>
   );
 }

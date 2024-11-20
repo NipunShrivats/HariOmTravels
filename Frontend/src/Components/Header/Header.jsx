@@ -76,7 +76,7 @@ export default function Header() {
                 <Button className="btn secondary_btn">
                   <Link to="/login">Login</Link>
                 </Button>
-                <Button className="btn secondary_btn">
+                <Button className="btn primary_btn">
                   <Link to="/Register">Register</Link>
                 </Button>
               </div>
