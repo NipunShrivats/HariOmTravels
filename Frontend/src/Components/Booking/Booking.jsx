@@ -32,7 +32,7 @@ export default function Booking({ tour, avgRating }) {
   const handleClick = (e) => {
     e.preventDefault();
 
-    console.log(credentials);
+    // console.log(credentials);
     navigate("/ThankyouPage");
   };
   return (

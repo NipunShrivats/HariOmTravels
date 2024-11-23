@@ -19,7 +19,7 @@ export default function Login() {
 
   const handleClick = (e) => {
     e.preventDefault();
-    console.log(credentials);
+    // console.log(credentials);
   };
 
   return (

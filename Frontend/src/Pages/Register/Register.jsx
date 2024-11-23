@@ -21,7 +21,7 @@ export default function Register() {
 
   const handleClick = (e) => {
     e.preventDefault();
-    console.log(credentials);
+    // console.log(credentials);
   };
 
   return (
