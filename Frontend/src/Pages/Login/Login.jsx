@@ -3,8 +3,7 @@ import { Container, Row, Col, Form, FormGroup, Button } from "reactstrap";
 import "./Login.css";
 import { Link } from "react-router-dom";
 
-// import loginImg from "../../assets/images/Login.png";
-import loginImg from "../../assets/images/Login.png";
+import Img from "../../assets/images/Register.png";
 import userIcon from "../../assets/images/user.png";
 
 export default function Login() {
@@ -30,7 +29,7 @@ export default function Login() {
           <Col lg="8">
             <div className="login_container d-flex justify-content-between align-items-center ">
               <div className="login_img">
-                <img src={loginImg} alt="" />
+                <img src={Img} alt="" />
               </div>
 
               <div className="login_form">
