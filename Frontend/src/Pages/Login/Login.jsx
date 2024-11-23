@@ -3,6 +3,7 @@ import { Container, Row, Col, Form, FormGroup, Button } from "reactstrap";
 import "./Login.css";
 import { Link } from "react-router-dom";
 
+// import loginImg from "../../assets/images/Login.png";
 import loginImg from "../../assets/images/Login.png";
 import userIcon from "../../assets/images/user.png";
 

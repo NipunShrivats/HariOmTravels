@@ -63,40 +63,36 @@ export default function Booking({ tour, avgRating }) {
                 required
                 onChange={handleChange}
               />
-            </FormGroup>
-            <FormGroup>
               <input
-                type="tel"
+                type="number"
                 placeholder="Phone"
                 id="phone"
                 required
                 onChange={handleChange}
               />
-            </FormGroup>
-            <FormGroup>
               <input
                 type="email"
                 placeholder="Email"
+                required
                 id="email"
-                required
                 onChange={handleChange}
               />
-            </FormGroup>
-            <FormGroup className="d-flex align-items-center gap-3">
-              <input
-                type="date"
-                placeholder=""
-                id="bookAt"
-                required
-                onChange={handleChange}
-              />
-              <input
-                type="number"
-                placeholder="No. of guests"
-                id="guestSize"
-                required
-                onChange={handleChange}
-              />
+              <div className="d-flex align-items-center gap-3">
+                <input
+                  type="date"
+                  placeholder=""
+                  id="bookAt"
+                  required
+                  onChange={handleChange}
+                />
+                <input
+                  type="number"
+                  placeholder="No. of guests"
+                  id="guestSize"
+                  required
+                  onChange={handleChange}
+                />
+              </div>
             </FormGroup>
           </Form>
         </div>
