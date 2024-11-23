@@ -14,7 +14,7 @@ export default function ThankyouPage() {
             <Col lg="12" className="text-center">
               <div className="thank_you">
                 <span>
-                  <i class="ri-checkbox-circle-line"></i>
+                  <i className="ri-checkbox-circle-line"></i>
                   <h1 className="mb3 fw-semibold">thank you</h1>
                   <h3 className="mb-4">your tour is booked</h3>
                   <button className="btn primary_btn">
