@@ -3,7 +3,7 @@ import { Container, Row, Col, Form, FormGroup, Button } from "reactstrap";
 import "./Register.css";
 import { Link } from "react-router-dom";
 
-import RegisterImg from "../../assets/images/Register.png";
+import RegisterImg from "../../assets/images/register.png";
 import userIcon from "../../assets/images/user.png";
 
 export default function Register() {
