@@ -11,7 +11,7 @@ import experinceImg from "../../assets/images/experience.png";
 import Subtitle from "../../Shared/Subtitle";
 
 import worldImg from "../../assets/images/world.png";
-import SearchBar from "../../Shared/SearchBar";
+// import SearchBar from "../../Shared/SearchBar";
 import ServiceList from "../../Services/ServiceList";
 import FeaturedTourList from "../../Featured-Tours/FeaturedTourList";
 import MasonryImagesGallery from "../../Components/ImageGallery/MasonryImagesGallery";
@@ -59,7 +59,7 @@ export default function Home() {
               </div>
             </Col>
           </Row>
-          <SearchBar />
+          {/* <SearchBar /> */}
         </Container>
       </section>
       {/* -------- What we serve section start -------- */}

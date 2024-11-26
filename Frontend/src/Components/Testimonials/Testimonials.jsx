@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import ava1 from "../../assets/images/ava-1.jpg";
 import ava2 from "../../assets/images/ava-2.jpg";
 import ava3 from "../../assets/images/ava-3.jpg";
+import quote from "../../assets/images/quote.png";
 
 import "./Testimonials.css";
 
@@ -13,10 +14,13 @@ function TestimonialCard(props) {
       <p>{data}</p>
       <div className="d-flex align-items-denter gap-4 mt-3">
         <img src={img} className="w-25 h-25 rounded-2" alt="" />
-        <div>
+        <div className="">
           <h5 className="mb-0 mt-3">{name}</h5>
           <p>Customer</p>
         </div>
+        {/* <div className="quote-cover">
+          <img src={quote} alt="" />
+        </div> */}
       </div>
     </div>
   );
@@ -43,9 +47,9 @@ export default function Testimonials() {
         },
       },
       {
-        breakpoint: 576,
+        breakpoint: 800,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           SlidesToScroll: 1,
         },
       },
@@ -53,7 +57,7 @@ export default function Testimonials() {
   };
   return (
     <>
-      <Slider {...settings}>
+      <Slider {...settings} className="test-slider">
         {/* 1 */}
         <TestimonialCard
           data={`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
